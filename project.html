@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+         <meta charset="UTF-8" />
+         <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+         <title>God's Care Poultry Farm</title>
+          <style>
+             *{
+             margin:0;
+             padding:0;
+            box-sizing:border-box;
+            font-family: Arial, sans-serif;
+             }
+              body{
+      background:#f5f7f2;
+      color:#333;
+      line-height:1.6;
+    }
+     /* HEADER */
+    header{
+      background:#2e7d32;
+      color:white;
+      padding:20px 60px;
+      display:flex;
+      justify-content:space-between;
+      align-items:center;
+      position:sticky;
+      top:0;
+    }
+     header h1{
+      font-size:30px;
+    }
+    nav a{
+      color:white;
+      text-decoration:none;
+      margin-left:25px;
+      font-weight:bold;
+      transition:0.3s;
+    }
+     nav a:hover{
+      color:#ffeb3b;
+    }
+    /* HERO SECTION */
+    .hero{
+      height:90vh;
+      background:
+      linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),
+      url('https://images.unsplash.com/photo-1548550023-2bdb3c5beed7?auto=format&fit=crop&w=1400&q=80');
+      background-size:cover;
+      background-position:center;
+      display:flex;
+      justify-content:center;
+      align-items:center;
+      text-align:center;
+      color:white;
+      padding:20px;
+    }
+    .hero-content h2{
+      font-size:55px;
+      margin-bottom:20px;
+    }
+      .hero-content p{
+      font-size:22px;
+      margin-bottom:30px;
+    }
+     .btn{
+      display:inline-block;
+      padding:15px 35px;
+      background:#ff9800;
+      color:white;
+      text-decoration:none;
+      border-radius:5px;
+      font-size:18px;
+      transition:0.3s;
+    }
+         background:#e68900;
+    }
+
+    /* ABOUT SECTION */
+    .about{
+      padding:80px 60px;
+      display:flex;
+      gap:40px;
+      align-items:center;
+      flex-wrap:wrap;
+    }
+     .about img{
+      width:500px;
+      max-width:100%;
+      border-radius:10px;
+    }
+
+    .about-text{
+      flex:1;
+    }
+
+    .about-text h2{
+      color:#2e7d32;
+      margin-bottom:20px;
+      font-size:38px;
+    }
+      .about-text p{
+      font-size:18px;
+      margin-bottom:15px;
+    }
+
+    /* SERVICES */
+    .services{
+      background:#ffffff;
+      padding:80px 60px;
+      text-align:center;
+    }
+
+    .services h2{
+      font-size:40px;
+      color:#2e7d32;
+      margin-bottom:50px;
+    }
+
+    .service-boxes{
+      display:grid;
+      grid-template-columns:repeat(auto-fit, minmax(250px, 1fr));
+      gap:25px;
+    }
+     .box{
+      background:#f5f7f2;
+      padding:30px;
+      border-radius:10px;
+      box-shadow:0 5px 15px rgba(0,0,0,0.1);
+      transition:0.3s;
+    }
+
+    .box:hover{
+      transform:translateY(-10px);
+    }
+
+    .box h3{
+      margin-bottom:15px;
+      color:#ff9800;
+    }
+
+    /* GALLERY */
+    .gallery{
+      padding:80px 60px;
+      text-align:center;
+    }
+     .gallery h2{
+      color:#2e7d32;
+      font-size:40px;
+      margin-bottom:40px;
+    }
+
+    .gallery-images{
+      display:grid;
+      grid-template-columns:repeat(auto-fit, minmax(250px, 1fr));
+      gap:20px;
+    }
+
+    .gallery-images img{
+      width:100%;
+      height:250px;
+      object-fit:cover;
+      border-radius:10px;
+    }
+    /* CONTACT */
+    .contact{
+      background:#2e7d32;
+      color:white;
+      padding:70px 20px;
+      text-align:center;
+    }
+
+    .contact h2{
+      font-size:40px;
+      margin-bottom:20px;
+    }
+
+    .contact p{
+      font-size:18px;
+      margin-bottom:10px;
+    }
+
+    /* FOOTER */
+    footer{
+      background:#1b5e20;
+      color:white;
+      text-align:center;
+      padding:20px;
+    }
+
+    /* RESPONSIVE */
+    @media(max-width:768px){
+
+      header{
+        flex-direction:column;
+        text-align:center;
+      }
+        nav{
+        margin-top:15px;
+      }
+
+      .hero-content h2{
+        font-size:38px;
+      }
+
+      .hero-content p{
+        font-size:18px;
+      }
+
+      .about{
+        padding:50px 20px;
+      }
+
+      .services,
+      .gallery{
+        padding:50px 20px;
+      }
+    }
+     </style>
+</head>
+<body>
+
+  <!-- HEADER -->
+  <header>
+    <h1>God's Care Agricultral Farm</h1>
+ <nav>
+      <a href="#">Home</a>
+      <a href="#about">About</a>
+      <a href="#services">Services</a>
+      <a href="#gallery">Gallery</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="hero-content">
+      <h2>Fresh & Healthy Agricultral Products</h2>
+      <p><i>Provide different breeds of animals, quality chicken, and Agricultral farming support with care and excellence.</p></i>
+
+    </div>
+  </section>
+ <!-- ABOUT -->
+  <section class="about" id="about">
+
+    <img src="https://images.unsplash.com/photo-1516467508483-a7212febe31a?auto=format&fit=crop&w=1000&q=80" alt="Agricultral Farm">
+
+    <div class="about-text">
+      <h2>About Us</h2>
+
+      <p>
+        <i>God's Care Agricultral Farm is Farming project ran by <b>NABIRYE MARY</b> committed to producing healthy poultry products
+       and animal products through modern farming techniques and proper animal care.</i>
+      </p>
+
+      <p>
+        <i>We supply different breeds of animals, quality chicken, and Agricultral farming support
+        to homes, businesses, and local communities.</i>
+      </p>
+
+    </div>
+    </section>
+
+  <!-- SERVICES -->
+  <section class="services" id="services">
+
+    <h2>Our Services</h2>
+
+    <div class="service-boxes">
+
+      <div class="box">
+        <h3>Animal-Breeds</h3>
+        <p><b>We develop different breeds for particular purposes such as milk production, meat production, and egg laying.</p></b>
+      </div>
+
+      <div class="box">
+        <h3>Farming Methods</h3>
+        <p><b>We give different training on how to yield big when it comes growing crops like Maize, Rice and Tomatoes.</p></b>
+      </div>
+
+      <div class="box">
+        <h3>Poultry Training</h3>
+        <p><b>We provide guidance and training for modern poultry farming practices.</p></b>
+      </div>
+
+    </div>
+
+  </section>
+ <!-- GALLERY -->
+  <section class="gallery" id="gallery">
+
+    <h2>Farm Gallery</h2>
+
+    <div class="gallery-images">
+
+      <img src="https://images.unsplash.com/photo-1589923188900-85dae523342b?auto=format&fit=crop&w=800&q=80" alt="Chicken">
+
+      <img src="https://images.unsplash.com/photo-1500595046743-cd271d694d30?auto=format&fit=crop&w=800&q=80" alt="Eggs">
+
+      <img src="https://images.unsplash.com/photo-1548767797-d8c844163c4c?auto=format&fit=crop&w=800&q=80" alt="Farm">
+
+    </div>
+
+  </section>
+<!-- CONTACT -->
+  <section class="contact" id="contact">
+
+    <h2>Contact Us</h2>
+
+    <p>Email: info@godscareagriculturalfarm.com</p>
+    <p>Phone: +256 756494116</p>
+    <p>Location: Kampala, Uganda</p>
+
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <p>&copy; 2026 God's Care Agricultral Farm. All Rights Reserved.</p>
+  </footer>
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
